@@ -11,6 +11,11 @@ const processData = (data) => {
     const filtered = Object.keys(val)
     .filter((key) => allowed.includes(key))   
     .reduce((obj, key) => {
+      if(key === "market_cap_usd"){
+        val[key] = val[key] / 1000000000        //Data normalization with dividing by a billion
+        val[key] = val[key].toFixed(2);         //Fixed to 2 digits in the fractional part
+        console.log(val[key])
+      }
       obj[key] = val[key];
       return obj;
     }, {});

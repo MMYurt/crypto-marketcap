@@ -4,9 +4,9 @@ const processData = require('../utils/processData')
 
 const fetchData = async () => {
   try {
-    const res = await axios.get("https://api.coinlore.net/api/tickers/");
-    console.log(processData(res.data.data)) 
-    //return res.data.data
+    const res = await axios.get("https://api.coinlore.net/api/tickers/"); 
+    console.log("Data fetching")
+    
     return processData(res.data.data)
   }
   catch (err) {
@@ -14,4 +14,4 @@ const fetchData = async () => {
   }
 };
 
-module.exports = fetchData();
+module.exports = fetchData;

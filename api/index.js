@@ -3,27 +3,27 @@
 */
 
 const express = require("express");
-const bp = require("body-parser");
-const port = 5000;
 const app = express();
 const router = require("./routes");
-const cors = require('cors');
 
+require('dotenv').config();
+const port = process.env.PORT
+const host = process.env.HOST
 
-app.use(cors({ origin: true }));
+//app.use(cors({ origin: true }));     
 
-app.use(function (req, res, next) {
+app.use(function (req, res, next) {                     //To handle CORS policy error
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Headers", "*");
   next();
 });
 
-app.use(express.urlencoded());
-app.use('/', router);
+
+app.use(express.urlencoded());    //Body Parser
+app.use('/', router);     //Router Middleware
 
 
 
-
-app.listen(5000, () => {
-  console.log(`Example app listening on port 5000!`);
+app.listen(port, () => {
+  console.log(`API listening on ${host}:${port}`);
 });
