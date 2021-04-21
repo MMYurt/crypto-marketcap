@@ -51,25 +51,23 @@ export default {
               },
               scaleLabel: {
                 display: true,
-                labelString: 'Rank'
-              }
-              
+                labelString: 'Rank',
+              },
             },
-            
           ],
           yAxes: [
             {
               scaleLabel: {
                 display: true,
-                labelString: 'Market Cap (Billion $)'
+                labelString: 'Market Cap (Billion $)',
               },
 
               ticks: {
-                beginAtZero: true,
+                beginAtZero: true, 
                 min: 0,
 
                 callback: function (value, index, values) {
-                  //needed to change the scientific notation results from using logarithmic scale
+                  //needed to change the scientific notation results from using logarithmic scale.
                   return value.toLocaleString()
                 },
               },

@@ -37,6 +37,6 @@ export default {
   build: {extend(config, ctx) {}},
   server: {     
     port: 3333, // default: 3000     
-    host: '0', // default: localhost   
+    host: 'localhost', // default: localhost   
   },
 }
