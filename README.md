@@ -63,6 +63,6 @@ I've created a Firebase Project for API and Netlify Demo Web Site. You can enter
 A more effective product can be created by updating in real time on the chart. The socket.io library can be used for this.
 
 # References
-[1] - https://stackoverflow.com/questions/60650972/vuejs-chartjs-chart-only-renders-after-code-change
-[2] - https://michaelnthiessen.com/force-re-render/ 
+[1] - https://stackoverflow.com/questions/60650972/vuejs-chartjs-chart-only-renders-after-code-change <br>
+[2] - https://michaelnthiessen.com/force-re-render/ <br>
 [3] - https://stackoverflow.com/a/47892526/5769933
