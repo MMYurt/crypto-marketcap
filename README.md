@@ -27,7 +27,7 @@ Instructions for running the project locally are given below.
 `npm install npm@latest -g`
 ## Installation
 1. Clone the repo
-`git clone https://github.com/MMYurt/aimultiple-task.git`
+`git clone https://github.com/MMYurt/crypto-marketcap.git`
 2. Install the packages separately for backend and frontend (assuming you are in the project's root directory) :
 	- Backend
 	`cd api && npm install`
