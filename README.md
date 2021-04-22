@@ -1,3 +1,4 @@
+
 # Project Overview
 
 A bar chart showing the market capitalization of cryptocurrencies has been created using NodeJS (ExpressJS) on backend and NuxtJS with ChartJS on frontend. You can see the production screenshot in the below:
@@ -5,9 +6,10 @@ A bar chart showing the market capitalization of cryptocurrencies has been creat
 ![Demo SS](https://i.imgur.com/IZvHkm9.png)
 ## Solution
 - **Backend**<br>
-	A bidirectional RESTful API was created with ExpressJs that communicates with Coinlore API and processes the incoming data. Then, sends it to the frontend. 
-
-	Memoization technique was used in order not to repeat the process in every request sent to the API. When the server is initialized, the first data is fetched and stored in memory. The data is checked according to the time of the request sent by the client, and if the TTL time of 1 minute is exceeded, a new request is sent to the Coinlore API.
+	A bidirectional RESTful API was created with ExpressJs that communicates with Coinlore API and processes the incoming data. Then, sends it to the frontend. <br>
+	Memoization technique was used in order not to repeat the process in every request sent to the API. When the server is initialized, the first data is fetched and stored in memory. The data is checked according to the time of the request sent by the client, and if the TTL time of 1 minute is exceeded, a new request is sent to the Coinlore API.<br>
+	`/getData` endpoint is accepts requests.
+	
 
 - **Frontend**<br>
 A NuxtJs project was created with the `npm init nuxt-app` command. Since I haven't experienced Vue frameworks before, it took me a while to understand with lifecycle and related methods. However, I was able to reach the optimal solution.
@@ -65,4 +67,5 @@ A more effective product can be created by updating in real time on the chart. T
 # References
 [1] - https://stackoverflow.com/questions/60650972/vuejs-chartjs-chart-only-renders-after-code-change <br>
 [2] - https://michaelnthiessen.com/force-re-render/ <br>
-[3] - https://stackoverflow.com/a/47892526/5769933
+[3] - https://stackoverflow.com/a/47892526/5769933 <br>
+[4] - https://nuxtjs.org/docs/2.x/get-started/installation
