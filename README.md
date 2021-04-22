@@ -28,11 +28,11 @@ Instructions for running the project locally are given below.
 ## Installation
 1. Clone the repo
 `git clone https://github.com/MMYurt/aimultiple-task.git`
-2. Install the packages separately for backend and frontend (assuming you are in the project's root directory)
-- Backend
+2. Install the packages separately for backend and frontend (assuming you are in the project's root directory) :
+	- Backend
 	`cd api && npm install`
 	
-- Frontend
+	- Frontend
 	`cd frontend && npm install`
 # Usage
 To run locally, you must run both Node and Nuxt with separate CLI. There are commands below for this (assuming you are in the project's root directory):
