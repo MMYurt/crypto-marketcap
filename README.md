@@ -6,8 +6,10 @@ A bar chart showing the market capitalization of cryptocurrencies has been creat
 ![Demo SS](https://i.imgur.com/IZvHkm9.png)
 ## Solution
 - **Backend**<br>
-	A bidirectional RESTful API was created with ExpressJs that communicates with Coinlore API and processes the incoming data. Then, sends it to the frontend. <br>
-	Memoization technique was used in order not to repeat the process in every request sent to the API. When the server is initialized, the first data is fetched and stored in memory. The data is checked according to the time of the request sent by the client, and if the TTL time of 1 minute is exceeded, a new request is sent to the Coinlore API.<br>
+	A bidirectional RESTful API was created with ExpressJs that communicates with Coinlore API and processes the incoming data. Then, sends it to the frontend. 
+	
+	Memoization technique was used in order not to repeat the process in every request sent to the API. When the server is initialized, the first data is fetched and stored in memory. The data is checked according to the time of the request sent by the client, and if the TTL time of 1 minute is exceeded, a new request is sent to the Coinlore API.
+	
 	`/getData` endpoint is accepts requests.
 	
 
