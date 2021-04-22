@@ -1,15 +1,15 @@
 # Project Overview
 
-A bar chart showing the market capitalization of cryptocurrencies has been created using NodeJs (ExpressJs) on backend and NuxtJs with ChartJS on frontend. You can see the production screenshot in the below:
+A bar chart showing the market capitalization of cryptocurrencies has been created using NodeJS (ExpressJS) on backend and NuxtJS with ChartJS on frontend. You can see the production screenshot in the below:
 
 ![Demo SS](https://i.imgur.com/IZvHkm9.png)
 ## Solution
-- **Backend**
+- **Backend**<br>
 	A bidirectional RESTful API was created with ExpressJs that communicates with Coinlore API and processes the incoming data. Then, sends it to the frontend. 
 
 	Memoization technique was used in order not to repeat the process in every request sent to the API. When the server is initialized, the first data is fetched and stored in memory. The data is checked according to the time of the request sent by the client, and if the TTL time of 1 minute is exceeded, a new request is sent to the Coinlore API.
 
-- **Frontend**
+- **Frontend**<br>
 A NuxtJs project was created with the `npm init nuxt-app` command. Since I haven't experienced Vue frameworks before, it took me a while to understand with lifecycle and related methods. However, I was able to reach the optimal solution.
 
 	ChartJs framework was used to create bar charts. To use it in Nuxt, the `vue-chartjs` module has been included in the project.
