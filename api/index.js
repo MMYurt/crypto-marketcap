@@ -13,7 +13,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use(express.urlencoded({ extended: true })); //Body Parser
+app.use(express.urlencoded({ extended: true })); //JSON Parser
 app.use("/", router); //Router Middleware
 
 app.listen(5000, () => {

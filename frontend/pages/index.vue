@@ -74,6 +74,7 @@ export default {
 
               afterBuildTicks: function (chart) {
                 //X-axis scaling
+                //Taken from: https://stackoverflow.com/a/47892526/5769933
                 var maxTicks = 20
                 var maxLog = Math.log(chart.ticks[0])
                 var minLogDensity = maxLog / maxTicks
