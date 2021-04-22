@@ -23,7 +23,7 @@ A NuxtJs project was created with the `npm init nuxt-app` command. Since I haven
 # Getting Started
 Instructions for running the project locally are given below.
 ## Prerequisites
-- npm 
+- npm <br>
 `npm install npm@latest -g`
 ## Installation
 1. Clone the repo
