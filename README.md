@@ -10,7 +10,7 @@ A bar chart showing the market capitalization of cryptocurrencies has been creat
 	
 	Memoization technique was used in order not to repeat the process in every request sent to the API. When the server is initialized, the first data is fetched and stored in memory. The data is checked according to the time of the request sent by the client, and if the TTL time of 1 minute is exceeded, a new request is sent to the Coinlore API.
 	
-	`/getData` endpoint is accepts requests.
+	`/getData` endpoint accepts requests.
 	
 
 - **Frontend**<br>
